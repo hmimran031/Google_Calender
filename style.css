@@ -1,0 +1,49 @@
+.calender {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 30px repeat(7, 20%);
+  row-gap: 20px;
+  column-gap: 15px;
+}
+.day {
+  background-color: skyblue;
+  border-radius: 7px;
+  font-size: 20px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.date {
+  background-color: skyblue;
+  border-radius: 7px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.other-month {
+  background-color: #a19d9d;
+}
+.mark::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 76px;
+  bottom: 9px;
+  background-color: green;
+  opacity: 0.7;
+  border-radius: 100%;
+}
+/* .day {
+  background-color: skyblue;
+  border-radius: 7px;
+  height: 75px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
